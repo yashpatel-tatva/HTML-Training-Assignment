@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    background-color: #FAFAFA;
 }
 
 .heroborder {
@@ -15,7 +16,7 @@ body {
 .equal {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -72,10 +73,17 @@ body {
     letter-spacing: 0px;
 }
 
+
+/* 
+.first {
+    margin-left: 30%;
+} */
+
 .second {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* margin-right: 30%; */
 }
 
 .form-control {
@@ -89,4 +97,33 @@ a:link {
 .btn {
     height: 45px;
     width: 138px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .heroborder {
+        width: 30%;
+        border: 10px solid #FFFFFF;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .heroborder {
+        width: 50%;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heroborder {
+        width: 100%;
+        display: none;
+    }
+    .form-group {
+        max-width: 100%;
+    }
+}
+
+.form-control:focus {
+    box-shadow: none;
 }

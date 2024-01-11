@@ -1,0 +1,105 @@
+.profilelogo {
+    width: 44px;
+    height: 44px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.me-2 {
+    background-color: transparent;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.dropdown-toggle1::after {
+    content: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.icons {
+    width: 20px;
+    height: 25px
+}
+
+.licons {
+    align-items: center;
+}
+
+.numbers {
+    font-weight: 700;
+}
+
+.text {
+    font-weight: 400;
+    font-size: small;
+}
+
+.usa,
+.canada,
+.russia,
+.india {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+
+.usa {
+    background: #C8242F 0% 0% no-repeat padding-box;
+}
+
+.canada {
+    background: #A2B86C 0% 0% no-repeat padding-box;
+}
+
+.russia {
+    background: #F16C20 0% 0% no-repeat padding-box;
+}
+
+.india {
+    background: #EBC844 0% 0% no-repeat padding-box;
+}
+
+.usadiv,
+.canadadiv,
+.russiadiv,
+.indiadiv {
+    font-weight: 400;
+    font-size: small;
+}
+
+.text-muted1s {
+    color: #d6d3d3;
+    font-size: larger;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.bgsidebar {
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+}

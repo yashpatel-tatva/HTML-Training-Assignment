@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\dashboard.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="images\menu-bar.svg" style="margin-right: 10px;">
+                <a class="navbar-brand" href="#">
+                    <image src="images\header-logo.svg"></image>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-2" id="navbarSupportedContent">
+                    <form class="d-flex align-items-center" role="search">
+                        <image class="search-icon" src="images/search-icon.svg"></image>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="d-flex row">
+                        <div class="nav-iem d-flex align-items-center col-sm-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <image src="images\notification-icon.svg" class=""></image>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mark all as Read</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Clear All</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="nav-iem d-flex align-items-center col-sm-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <image src="images\profile.png" class="profilelogo"></image> John Doe
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-lg-2" style="">
+                    <ul class="list-group">
+                        <a class="sidebarmenulink" href="dashboard.html">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/dashboard-default.svg"><span class="ps-4 ">Dashboard</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink bgsidebar rounded" href="innerpage.html">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/graph-active.svg"><span class="ps-4 text-danger">Analysis</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/inbox-default.svg"><span class="ps-4">Inbox</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/clock-default.svg"><span class="ps-4">History</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/user-default.svg"><span class="ps-4">Users</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/maintenance-default.svg"><span class=" ps-4 ">Maintenance</span>
+                                </div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class=" list-group-items ps-4 text-dark ">
+                                <div class="licons d-flex pt-2 pb-2 "><img class="icons d-flex " src="./images/setting-default.svg "><span class="ps-4 ">Setting</span></div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-10 ps-4" style="background-color: #FAFAFA;">
+                    <div class="h2 mt-4">
+                        Analysis
+                    </div>
+                    <div class="container-fluid bg-white">
+                        <div>
+                            <div class="h4 px-2 py-3">One Column</div>
+                            <div class="container-fluid row">
+                                <div class="form-group p-2">
+                                    <input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                </div>
+                                <div class="form-group p-2">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option>Dropdown</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group p-2">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Multiple lines" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h4 px-2 py-3">
+                                Two Column
+                            </div>
+                            <div class="container-fluid row d-flex">
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h4 px-2 py-3">Three Column</div>
+                            <div class="container-fluid row">
+                                <div class="col-sm p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-sm p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-sm p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h4 px-2 py-3">Four Column</div>
+                            <div class="container-fluid row">
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="js/bootstrap.bundle.min.js "></script>
+
+</html>

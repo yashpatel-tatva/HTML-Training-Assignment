@@ -5,10 +5,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\dashboard.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+    <div class="main container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="images\menu-bar.svg" style="margin-right: 10px;">
+                <a class="navbar-brand" href="#">
+                    <image src="images\header-logo.svg"></image>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-2" id="navbarSupportedContent">
+                    <form class="d-flex align-items-center" role="search">
+                        <image class="search-icon" src="images/search-icon.svg"></image>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="d-flex row">
+                        <div class="nav-iem d-flex align-items-center col-sm-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <image src="images\notification-icon.svg" class=""></image>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mark all as Read</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Clear All</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="nav-iem d-flex align-items-center col-sm-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <image src="images\profile.png" class="profilelogo"></image> John Doe
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-lg-2" style="">
+                    <ul class="list-group">
+                        <a class="sidebarmenulink bgsidebar rounded" href="dashboard.html">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/dashboard-active.svg"><span class="ps-4 text-danger">Dashboard</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="innerpage.html">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/graph-default.svg"><span class="ps-4">Analysis</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/inbox-default.svg"><span class="ps-4">Inbox</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/clock-default.svg"><span class="ps-4">History</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/user-default.svg"><span class="ps-4">Users</span></div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class="list-group-items ps-4 text-dark">
+                                <div class="licons d-flex pt-2 pb-2"><img class="icons d-flex" src="./images/maintenance-default.svg"><span class=" ps-4">Maintenance</span>
+                                </div>
+                            </li>
+                        </a>
+                        <a class="sidebarmenulink" href="#">
+                            <li class=" list-group-items ps-4 text-dark ">
+                                <div class="licons d-flex pt-2 pb-2 "><img class="icons d-flex " src="./images/setting-default.svg "><span class="ps-4 ">Setting</span></div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-10 ps-4" style="background-color: #FAFAFA;">
+                    <div class="h2 mt-4">
+                        Dashboard
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-around p-4">
+                            <div class="col-xl-2 p-3 rounded bg-white">
+                                <div class="row d-flex">
+                                    <div class="col-xl-4">
+                                        <img src="./images/star.svg">
+                                    </div>
+                                    <div class="col-xl-8 d-flex flex-column">
+                                        <div class="numbers">23,456</div>
+                                        <div class="text">New Products</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 p-4 rounded bg-white">
+                                <div class="row d-flex">
+                                    <div class="col-xl-4">
+                                        <img src="./images/new-product.svg">
+                                    </div>
+                                    <div class="col-xl-8 d-flex flex-column">
+                                        <div class="numbers">2345</div>
+                                        <div class="text">Added Products</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 p-4 rounded bg-white">
+                                <div class="row d-flex">
+                                    <div class="col-xl-4">
+                                        <img src="./images/money-bag.svg">
+                                    </div>
+                                    <div class="col-xl-8 d-flex flex-column">
+                                        <div class="numbers">5678</div>
+                                        <div class="text">Total Product</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 p-4 rounded bg-white">
+                                <div class="row d-flex">
+                                    <div class="col-xl-4">
+                                        <img src="./images/dollar-filled.svg">
+                                    </div>
+                                    <div class="col-xl-8 d-flex flex-column">
+                                        <div class="numbers">5678</div>
+                                        <div class="text">Today's Sale</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 p-4 rounded bg-white">
+                                <div class="row d-flex">
+                                    <div class="col-xl-4">
+                                        <img src="./images/money-bag.svg">
+                                    </div>
+                                    <div class="col-xl-8 d-flex flex-column">
+                                        <div class="numbers">3,23,456</div>
+                                        <div class="text">Total Sale</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-xl-7 bg-white p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="h4">Sale</div>
+                                    <div>
+                                        <ul class="d-flex">
+                                            <li class="px-2 ">Weekly</li>
+                                            <li class="px-2">Monthly</li>
+                                            <li class="px-2 text-danger text-decoration-underline">Yearly</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="./images/data-graph.png">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 p-3 bg-white">
+                                <div>
+                                    <div class="h4">
+                                        Sales By Country
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./images/pie-chart.svg">
+                                </div>
+                                <div class="country  d-flex">
+                                    <div class="salescountry1 p-2 justify-content-start">
+                                        <div class="usadiv d-flex p-2 align-items-center">
+                                            <div class="usa rounded-circle"></div>
+                                            <div class="px-2">United States of America</div>
+                                        </div>
+                                        <div class="russiadiv p-2  d-flex align-items-center">
+                                            <div class="russia rounded-circle"></div>
+                                            <div class="px-2">Russia</div>
+                                        </div>
+                                    </div>
+                                    <div class="salescountry2 p-2 justify-content-start">
+                                        <div class="canadadiv p-2  d-flex align-items-center">
+                                            <div class="canada rounded-circle"></div>
+                                            <div class="px-2">Canada</div>
+                                        </div>
+                                        <div class="indiadiv p-2  d-flex align-items-center">
+                                            <div class="india rounded-circle"></div>
+                                            <div class="px-2">India</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid bg-white">
+
+                            <div class="h3 mt-3 p-3 d-flex justify-content-between">
+                                Invoices <span class="text-danger h6">View  All</span>
+                            </div>
+
+                            <div>
+                                <table class="table">
+                                    <th class="text-muted1s">INVOICE</th>
+                                    <th class="text-muted1s">COMPANY NAME</th>
+                                    <th class="text-muted1s">EMAIL</th>
+                                    <th class="text-muted1s">DUE DATE</th>
+                                    <th class="text-muted1s">STATUS</th>
+                                    <th class="text-muted1s">AMOUNT</th>
+
+                                    <tr>
+                                        <td>651535</td>
+                                        <td>Public Adjusting Firm</td>
+                                        <td>georgia.young@example.com</td>
+                                        <td>24 May,2020</td>
+                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                        <td>$47800</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>558671</td>
+                                        <td>Other</td>
+                                        <td>alma.lawson@example.com</td>
+                                        <td>8 Sep,2020</td>
+                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                        <td>$98000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>651535</td>
+                                        <td>Public Adjusting Firm</td>
+                                        <td>georgia.young@example.com</td>
+                                        <td>24 May,2020</td>
+                                        <td><span style="background: #f3dddd 0% 0% no-repeat padding-box;" class="text-danger px-2 py-1 rounded">Failed</span></td>
+                                        <td>$47800</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>558671</td>
+                                        <td>Other</td>
+                                        <td>alma.lawson@example.com</td>
+                                        <td>8 Sep,2020</td>
+                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                        <td>$98000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>558671</td>
+                                        <td>Other</td>
+                                        <td>alma.lawson@example.com</td>
+                                        <td>8 Sep,2020</td>
+                                        <td><span style="background: #F8F8F8 0% 0% no-repeat padding-box;" class="text-muted px-2 py-1 rounded">Pending</span></td>
+                                        <td>$98000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>651535</td>
+                                        <td>Public Adjusting Firm</td>
+                                        <td>georgia.young@example.com</td>
+                                        <td>24 May,2020</td>
+                                        <td><span style="background: #f3dddd 0% 0% no-repeat padding-box;" class="text-danger px-2 py-1 rounded">Failed</span></td>
+                                        <td>$47800</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>558671</td>
+                                        <td>Other</td>
+                                        <td>alma.lawson@example.com</td>
+                                        <td>8 Sep,2020</td>
+                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                        <td>$98000</td>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 </body>
+<script src="js/bootstrap.bundle.min.js "></script>
 
 </html>
