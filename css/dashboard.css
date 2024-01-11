@@ -60,6 +60,8 @@ li {
     width: 18px;
     height: 18px;
     opacity: 1;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .usa {
@@ -102,4 +104,10 @@ a:hover {
 
 .bgsidebar {
     background: #FFF3F4 0% 0% no-repeat padding-box;
+}
+
+.graphpng {
+    width: 100%;
+    height: auto;
+    display: block;
 }
