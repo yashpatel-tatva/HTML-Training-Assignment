@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\dashboard.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/innerhtml.css">
 </head>
 
 <body>
@@ -112,17 +113,17 @@
                             <div class="h4 px-2 py-3">One Column</div>
                             <div class="container-fluid row">
                                 <div class="form-group p-2">
-                                    <input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                    <input type="textbox" class="form-control" required="required"><span>Name</span>
                                 </div>
                                 <div class="form-group p-2">
-                                    <select class="form-select" id="exampleFormControlSelect1">
+                                    <select class="form-select">
                                         <option>Dropdown</option>
                                         <option>1</option>
                                         <option>2</option>
                                     </select>
                                 </div>
                                 <div class="form-group p-2">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Multiple lines" rows="3"></textarea>
+                                    <textarea class="form-control" placeholder="Multiple lines" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -131,27 +132,134 @@
                                 Two Column
                             </div>
                             <div class="container-fluid row d-flex">
-                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" required="required"><span>Name</span></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" required="required"><span>Username</span></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" required="required"><span>Password</span></div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2 form-group"><select class="form-select">
+                                    <option>Dropdown</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select></div>
                             </div>
                         </div>
                         <div>
                             <div class="h4 px-2 py-3">Three Column</div>
                             <div class="container-fluid row">
-                                <div class="col-sm p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-sm p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-sm p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-sm p-2 form-group"><input type="textbox" class="form-control" required="required"><span>Focus</span></div>
+                                <div class="col-sm p-2 form-group"><input type="textbox" class="form-control" required="required"><span>Password</span></div>
+                                <div class="col-sm p-2 form-group disabletext"><input type="textbox" class="form-control" required="required" disabled placeholder="John Doe"><span>Disabled</span></div>
                             </div>
                         </div>
                         <div>
                             <div class="h4 px-2 py-3">Four Column</div>
                             <div class="container-fluid row">
-                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
-                                <div class="col-xl-3 col-md-6 col-sm-12 p-2"><input type="textbox" class="form-control" id="exampleFormControlInput1" placeholder="Name"></div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control Designation" required="required">
+                                    <span class="">Designation</span>
+                                    <lable class="fclbl text-danger">Enter Valid data</lable>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2 form-group"><input type="textbox" class="form-control" required="required">
+                                    <span>Name</span>
+                                    <label class="fclbl">Enter your full Name as per your ID</lable>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2 form-group "><input type="textbox" class="form-control" required="required">
+                                    <span>Username</span>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-sm-12 p-2 form-group"><select class="form-select">
+                                    <option>Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h4 px-2 py-3">Other design Element</div>
+                            <div>
+                                <div class="h5 px-2 py-3">File Upload</div>
+                                <div class="container-fluid input-group d-flex align-items-center">
+                                    <div class="border border-1 border-danger px-3 pt-1 rounded-pill"><input type="file" id="actual-btn" hidden/>
+                                        <label for="actual-btn"><div class=" d-flex align-items-center justify-content-around"><img class="px-1" src="./images/cloud-upload-icon.svg"><span class="px -1 text-danger">Upload</span></div></label></div>
+                                <div class="px-3"><span class="choosenfile" id="file-chosen">No item selected</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h5 px-2 py-3">Radio Button</div>
+                            <div class="container-fluid d-flex">
+                                <div class="d-flex align-items-center"><input type="radio" name="radio" class=""><label class="px-2">Option 1</label></div>
+                                <div class="d-flex align-items-center mx-5"><input type="radio" name="radio" class=""><label class="px-2">Option 2</label></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h5 px-2 py-3">Checkbox</div>
+                            <div class="container-fluid d-flex">
+                                <div class="d-flex align-items-center"><input type="checkbox" name="radio" class=""><label class="px-2">Option 1</label></div>
+                                <div class="d-flex align-items-center mx-5"><input type="checkbox" name="radio" class=""><label class="px-2">Option 2</label></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h5 px-2 py-3">Snackbar</div>
+                            <div class="container-fluid row d-flex">
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2">
+                                    <div class="d-flex border border-1 border-danger rounded p-2 align-items-center">
+                                        <div><img class="" src="./images/error-icon.svg"></div>
+                                        <div><span class="text-danger p-2">This is error message</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2">
+                                    <div class="d-flex rounded p-2 align-items-center infoborder">
+                                        <div><img class="" src="./images/info-icon.svg"></div>
+                                        <div><span class="p-2" style="color: #00b9e1;">This is error message</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2">
+                                    <div class="d-flex border border-1 border-warning rounded p-2 align-items-center">
+                                        <div><img class="" src="./images/warning-icon.svg"></div>
+                                        <div><span class="text-warning p-2">This is error message</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6 col-sm-12 p-2">
+                                    <div class="d-flex rounded p-2 align-items-center successsborder">
+                                        <div><img class="" src="./images/success-icon.svg"></div>
+                                        <div><span class="p-2" style="color: #00af27;">This is error message</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h5 px-2 py-3">Call to action</div>
+                            <div class="container-fluid d-flex">
+                                <div class="d-flex">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                                    <label class="btn btn-outline-danger rounded-pill px-4" for="success-outlined"><span class="h5">Primary</span></label>
+                                </div>
+                                <div class="d-flex mx-3">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                                    <label class="btn btn-outline-danger rounded-pill px-4" for="danger-outlined"><span class="h5">Secondary</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="h5 px-2 py-3">Tabs</div>
+                            <div class="container-fluid pb-5">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tab 1</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Tab 2</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Tab 3</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content pt-4" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Tab 1 Home Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eius obcaecati molestias laudantium aliquam asperiores. Fugiat vero perferendis quos voluptas itaque dolor eos ratione, explicabo veritatis,
+                                        nesciunt aspernatur. Similique, provident.</div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Tab 2 Profile Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nostrum accusantium libero tempora facere? Accusamus, nulla cupiditate vel nemo veritatis, a delectus eveniet perferendis, ad quaerat
+                                        libero amet inventore consequatur?</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Tab 3 Contact Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque ipsam consequatur eaque sapiente nam at debitis explicabo maiores nulla quam, odio dolore saepe harum, praesentium velit? Natus, fugit
+                                        commodi.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,8 +268,10 @@
         </div>
     </div>
     </div>
+    </div>
 
 </body>
 <script src="js/bootstrap.bundle.min.js "></script>
+<script src="./js/custom.js"></script>
 
 </html>

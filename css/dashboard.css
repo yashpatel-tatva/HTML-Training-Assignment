@@ -24,6 +24,7 @@ li {
 .form-control:focus,
 .form-select:focus {
     box-shadow: none;
+    border: 1px solid #C8242F;
 }
 
 .navbar-toggler {
@@ -107,7 +108,7 @@ a:hover {
 }
 
 .graphpng {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
 }
