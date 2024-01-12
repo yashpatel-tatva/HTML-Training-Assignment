@@ -112,3 +112,25 @@ a:hover {
     height: auto;
     display: block;
 }
+
+.graphpng1 {
+    width: 90%;
+    max-width: 217px;
+    max-height: 217px;
+    height: auto;
+    display: block;
+}
+
+.carddisplay {
+    padding: 2%;
+    margin: 10px;
+}
+
+.transition {
+    transition: all 0.75s;
+}
+
+.width-0 {
+    width: 0;
+    height: 0;
+}

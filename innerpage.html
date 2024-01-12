@@ -15,7 +15,7 @@
     <div class="main container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img src="images\menu-bar.svg" style="margin-right: 10px;">
+                <div id="sidebutton"><img src="images\menu-bar.svg" style="margin-right: 10px;"></div>
                 <a class="navbar-brand" href="#">
                     <image src="images\header-logo.svg"></image>
                 </a>
@@ -64,7 +64,7 @@
         </nav>
         <div class="container-fluid">
             <div class="row d-flex">
-                <div class="col-lg-2" style="">
+                <div class="col-lg-2 transition" id="sidebar" style="">
                     <ul class="list-group">
                         <a class="sidebarmenulink" href="dashboard.html">
                             <li class="list-group-items ps-4 text-dark">
@@ -104,7 +104,7 @@
                         </a>
                     </ul>
                 </div>
-                <div class="col-lg-10 ps-4" style="background-color: #FAFAFA;">
+                <div class="col-lg-10 ps-4 transition" id="allcontent" style="background-color: #FAFAFA;">
                     <div class="h2 mt-4">
                         Analysis
                     </div>
@@ -176,8 +176,8 @@
                             <div>
                                 <div class="h5 px-2 py-3">File Upload</div>
                                 <div class="container-fluid input-group d-flex align-items-center">
-                                    <div class="border border-1 border-danger px-3 pt-1 rounded-pill"><input type="file" id="actual-btn" hidden/>
-                                        <label for="actual-btn"><div class=" d-flex align-items-center justify-content-around"><img class="px-1" src="./images/cloud-upload-icon.svg"><span class="px -1 text-danger">Upload</span></div></label></div>
+                                    <div role="button" class="border border-1 border-danger px-3 pt-1 rounded-pill"><input type="file" id="actual-btn" hidden/>
+                                        <label role="button" for="actual-btn"><div class=" d-flex align-items-center justify-content-around"><img class="px-1" src="./images/cloud-upload-icon.svg"><span class="px -1 text-danger">Upload</span></div></label></div>
                                 <div class="px-3"><span class="choosenfile" id="file-chosen">No item selected</span></div>
                             </div>
                         </div>

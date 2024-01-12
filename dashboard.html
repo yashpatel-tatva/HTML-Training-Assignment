@@ -15,7 +15,7 @@
     <div class="main container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img src="images\menu-bar.svg" style="margin-right: 10px;">
+                <div id="sidebutton"><img src="images\menu-bar.svg" style="margin-right: 10px;"></div>
                 <a class="navbar-brand" href="#">
                     <image src="images\header-logo.svg"></image>
                 </a>
@@ -64,7 +64,7 @@
         </nav>
         <div class="container-fluid">
             <div class="row d-flex">
-                <div class="col-lg-2" style="">
+                <div class="col-lg-2 transition" id="sidebar" style="">
                     <ul class="list-group">
                         <a class="sidebarmenulink bgsidebar rounded" href="dashboard.html">
                             <li class="list-group-items ps-4 text-dark">
@@ -104,13 +104,13 @@
                         </a>
                     </ul>
                 </div>
-                <div class="col-lg-10 ps-4" style="background-color: #FAFAFA;">
+                <div class="col-lg-10 ps-4 transition" id="allcontent" style="background-color: #fafafa;">
                     <div class="h2 mt-4">
                         Dashboard
                     </div>
                     <div class="container-fluid">
-                        <div class="row d-flex justify-content-around p-4">
-                            <div class="col-xl-2 p-3 rounded bg-white">
+                        <div class="row d-flex justify-content-between p-4">
+                            <div class="col-xl-2 col-md-4 col-sm-6 d-flex carddisplay justify-content-center align-items-center  rounded bg-white">
                                 <div class="row d-flex">
                                     <div class="col-xl-4">
                                         <img src="./images/star.svg">
@@ -121,7 +121,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 p-4 rounded bg-white">
+                            <div class="col-xl-2 col-md-4 col-sm-6  d-flex carddisplay justify-content-center align-items-center  rounded bg-white">
                                 <div class="row d-flex">
                                     <div class="col-xl-4">
                                         <img src="./images/new-product.svg">
@@ -132,7 +132,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 p-4 rounded bg-white">
+                            <div class="col-xl-2 col-md-4 col-sm-6  d-flex carddisplay justify-content-center align-items-center  rounded bg-white">
                                 <div class="row d-flex">
                                     <div class="col-xl-4">
                                         <img src="./images/money-bag.svg">
@@ -143,7 +143,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 p-4 rounded bg-white">
+                            <div class="col-xl-2 col-md-4 col-sm-6  d-flex carddisplay justify-content-center align-items-center  rounded bg-white">
                                 <div class="row d-flex">
                                     <div class="col-xl-4">
                                         <img src="./images/dollar-filled.svg">
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 p-4 rounded bg-white">
+                            <div class="col-xl-2 col-md-4 col-sm-6  d-flex carddisplay justify-content-center align-items-center  rounded bg-white">
                                 <div class="row d-flex">
                                     <div class="col-xl-4">
                                         <img src="./images/money-bag.svg">
@@ -166,8 +166,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-around">
-                            <div class="col-xl-7 bg-white p-3">
+                        <div class="row d-flex justify-content-between p-4">
+                            <div class="col-xl-8 bg-white p-3 rounded carddisplay">
                                 <div class="d-flex justify-content-between">
                                     <div class="h4">Sale</div>
                                     <div>
@@ -188,14 +188,14 @@
                                     <img src="./images/data-graph.png" class="graphpng">
                                 </div>
                             </div>
-                            <div class="col-xl-3 p-3 bg-white">
+                            <div class="col-xl-3 p-3 bg-white rounded carddisplay">
                                 <div>
                                     <div class="h4">
                                         Sales By Country
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./images/pie-chart.svg">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="./images/pie-chart.svg" class="graphpng1">
                                 </div>
                                 <div class="container-fluid row d-flex">
                                     <div class="col-xl-6 col-md-6 col-sm-12 p-2">
@@ -225,88 +225,85 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid bg-white">
+                        <div class="justify-content-between p-4 row d-flex">
+                            <div class="col-xl-12 bg-white p-3 rounded ">
+                                <div class="h3 d-flex justify-content-between">
+                                    Invoices <span class="text-danger h6">View  All</span>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table ">
+                                        <th class="text-muted1s">INVOICE</th>
+                                        <th class="text-muted1s">COMPANY NAME</th>
+                                        <th class="text-muted1s">EMAIL</th>
+                                        <th class="text-muted1s">DUE DATE</th>
+                                        <th class="text-muted1s">STATUS</th>
+                                        <th class="text-muted1s">AMOUNT</th>
 
-                            <div class="h3 mt-3 p-3 d-flex justify-content-between">
-                                Invoices <span class="text-danger h6">View  All</span>
+                                        <tr>
+                                            <td>651535</td>
+                                            <td>Public Adjusting Firm</td>
+                                            <td>georgia.young@example.com</td>
+                                            <td>24 May,2020</td>
+                                            <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                            <td>$47800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>558671</td>
+                                            <td>Other</td>
+                                            <td>alma.lawson@example.com</td>
+                                            <td>8 Sep,2020</td>
+                                            <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                            <td>$98000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>651535</td>
+                                            <td>Public Adjusting Firm</td>
+                                            <td>georgia.young@example.com</td>
+                                            <td>24 May,2020</td>
+                                            <td><span style="background: #f3dddd 0% 0% no-repeat padding-box;" class="text-danger px-2 py-1 rounded">Failed</span></td>
+                                            <td>$47800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>558671</td>
+                                            <td>Other</td>
+                                            <td>alma.lawson@example.com</td>
+                                            <td>8 Sep,2020</td>
+                                            <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                            <td>$98000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>558671</td>
+                                            <td>Other</td>
+                                            <td>alma.lawson@example.com</td>
+                                            <td>8 Sep,2020</td>
+                                            <td><span style="background: #F8F8F8 0% 0% no-repeat padding-box;" class="text-muted px-2 py-1 rounded">Pending</span></td>
+                                            <td>$98000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>651535</td>
+                                            <td>Public Adjusting Firm</td>
+                                            <td>georgia.young@example.com</td>
+                                            <td>24 May,2020</td>
+                                            <td><span style="background: #f3dddd 0% 0% no-repeat padding-box;" class="text-danger px-2 py-1 rounded">Failed</span></td>
+                                            <td>$47800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>558671</td>
+                                            <td>Other</td>
+                                            <td>alma.lawson@example.com</td>
+                                            <td>8 Sep,2020</td>
+                                            <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
+                                            <td>$98000</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-
-                            <div>
-                                <table class="table">
-                                    <th class="text-muted1s">INVOICE</th>
-                                    <th class="text-muted1s">COMPANY NAME</th>
-                                    <th class="text-muted1s">EMAIL</th>
-                                    <th class="text-muted1s">DUE DATE</th>
-                                    <th class="text-muted1s">STATUS</th>
-                                    <th class="text-muted1s">AMOUNT</th>
-
-                                    <tr>
-                                        <td>651535</td>
-                                        <td>Public Adjusting Firm</td>
-                                        <td>georgia.young@example.com</td>
-                                        <td>24 May,2020</td>
-                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
-                                        <td>$47800</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>558671</td>
-                                        <td>Other</td>
-                                        <td>alma.lawson@example.com</td>
-                                        <td>8 Sep,2020</td>
-                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
-                                        <td>$98000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>651535</td>
-                                        <td>Public Adjusting Firm</td>
-                                        <td>georgia.young@example.com</td>
-                                        <td>24 May,2020</td>
-                                        <td><span style="background: #f3dddd 0% 0% no-repeat padding-box;" class="text-danger px-2 py-1 rounded">Failed</span></td>
-                                        <td>$47800</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>558671</td>
-                                        <td>Other</td>
-                                        <td>alma.lawson@example.com</td>
-                                        <td>8 Sep,2020</td>
-                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
-                                        <td>$98000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>558671</td>
-                                        <td>Other</td>
-                                        <td>alma.lawson@example.com</td>
-                                        <td>8 Sep,2020</td>
-                                        <td><span style="background: #F8F8F8 0% 0% no-repeat padding-box;" class="text-muted px-2 py-1 rounded">Pending</span></td>
-                                        <td>$98000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>651535</td>
-                                        <td>Public Adjusting Firm</td>
-                                        <td>georgia.young@example.com</td>
-                                        <td>24 May,2020</td>
-                                        <td><span style="background: #f3dddd 0% 0% no-repeat padding-box;" class="text-danger px-2 py-1 rounded">Failed</span></td>
-                                        <td>$47800</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>558671</td>
-                                        <td>Other</td>
-                                        <td>alma.lawson@example.com</td>
-                                        <td>8 Sep,2020</td>
-                                        <td><span style="background: #EBFFEF 0% 0% no-repeat padding-box;" class="text-success px-2 py-1 rounded">Paid</span></td>
-                                        <td>$98000</td>
-                                    </tr>
-
-
-                                </table>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -317,5 +314,6 @@
 
 </body>
 <script src="js/bootstrap.bundle.min.js "></script>
+<script src="js/dashboard.js"></script>
 
 </html>
