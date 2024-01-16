@@ -1,8 +1,8 @@
 var sidebar = document.getElementById('sidebar');
 console.log(sidebar);
-var flag = 0;
+var flag = 1;
 if (sidebar.style.display != "none") {
-    flag = 1;
+    flag = 0;
 }
 console.log(flag);
 const sidebutton = document.getElementById('sidebutton');
