@@ -108,7 +108,16 @@ option:checked {
     transition: all 0.75s;
 }
 
-.width-0 {
-    width: 0;
-    height: 0;
+@media only screen and (max-width: 3024px) {
+    .width-0 {
+        width: 70px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .width-0 {
+        width: 0;
+        height: 0;
+    }
 }

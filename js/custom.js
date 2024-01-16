@@ -23,11 +23,11 @@ sidebutton.addEventListener('click', function() {
     console.log(flag);
     if (flag == 1) {
         sidebar.classList.replace('col-lg-2', 'width-0');
-        allcontent.classList.replace('col-lg-10', 'col-lg-12')
+        allcontent.classList.replace('col-lg-10', 'col-lg-11')
         flag = 0;
     } else {
         sidebar.classList.replace('width-0', 'col-lg-2');
-        allcontent.classList.replace('col-lg-12', 'col-lg-10')
+        allcontent.classList.replace('col-lg-11', 'col-lg-10')
         flag = 1;
     }
 })

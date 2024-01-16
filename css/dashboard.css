@@ -1,136 +1,168 @@
-.profilelogo {
-    width: 44px;
-    height: 44px;
-}
-
-.search-icon {
-    width: 16px;
-    height: 16px;
-}
-
-.me-2 {
-    background-color: transparent;
-    border: 0;
-}
-
-li {
-    list-style: none;
-}
-
-.dropdown-toggle1::after {
-    content: none;
-}
-
-.form-control:focus,
-.form-select:focus {
-    box-shadow: none;
-    border: 1px solid #C8242F;
-}
-
-.navbar-toggler {
-    background-color: transparent;
-    border: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.icons {
-    width: 20px;
-    height: 25px
-}
-
-.licons {
-    align-items: center;
-}
-
-.numbers {
-    font-weight: 700;
-}
-
-.text {
-    font-weight: 400;
-    font-size: small;
-}
-
-.usa,
-.canada,
-.russia,
-.india {
-    width: 18px;
-    height: 18px;
-    opacity: 1;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.usa {
-    background: #C8242F 0% 0% no-repeat padding-box;
-}
-
-.canada {
-    background: #A2B86C 0% 0% no-repeat padding-box;
-}
-
-.russia {
-    background: #F16C20 0% 0% no-repeat padding-box;
-}
-
-.india {
-    background: #EBC844 0% 0% no-repeat padding-box;
-}
-
-.usadiv,
-.canadadiv,
-.russiadiv,
-.indiadiv {
-    font-weight: 400;
-    font-size: small;
-}
-
-.text-muted1s {
-    color: #d6d3d3;
-    font-size: larger;
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: red;
-}
-
-.bgsidebar {
-    background: #FFF3F4 0% 0% no-repeat padding-box;
-}
-
-.graphpng {
-    width: 90%;
-    height: auto;
-    display: block;
-}
-
-.graphpng1 {
-    width: 90%;
-    max-width: 217px;
-    max-height: 217px;
-    height: auto;
-    display: block;
-}
-
-.carddisplay {
-    padding: 2%;
-    margin: 10px;
-}
-
-.transition {
-    transition: all 0.75s;
-}
-
-.width-0 {
-    width: 0;
-    height: 0;
-}
+    .profilelogo {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .search-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .me-2 {
+        background-color: transparent;
+        border: 0;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .dropdown-toggle1::after {
+        content: none;
+    }
+    
+    .form-control:focus,
+    .form-select:focus {
+        box-shadow: none;
+        border: 1px solid #C8242F;
+    }
+    
+    .navbar-toggler {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    
+    .icons {
+        width: 20px;
+        height: 25px
+    }
+    
+    .licons {
+        align-items: center;
+    }
+    
+    .numbers {
+        font-weight: 700;
+    }
+    
+    .text {
+        font-weight: 400;
+        font-size: small;
+    }
+    
+    .usa,
+    .canada,
+    .russia,
+    .india {
+        width: 18px;
+        height: 18px;
+        opacity: 1;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    
+    .usa {
+        background: #C8242F 0% 0% no-repeat padding-box;
+    }
+    
+    .canada {
+        background: #A2B86C 0% 0% no-repeat padding-box;
+    }
+    
+    .russia {
+        background: #F16C20 0% 0% no-repeat padding-box;
+    }
+    
+    .india {
+        background: #EBC844 0% 0% no-repeat padding-box;
+    }
+    
+    .usadiv,
+    .canadadiv,
+    .russiadiv,
+    .indiadiv {
+        font-weight: 400;
+        font-size: small;
+    }
+    
+    .text-muted1s {
+        color: #d6d3d3;
+        font-size: larger;
+    }
+    
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: red;
+    }
+    
+    .bgsidebar {
+        background: #FFF3F4 0% 0% no-repeat padding-box;
+    }
+    
+    .graphpng {
+        width: 90%;
+        height: auto;
+        display: block;
+    }
+    
+    .graphpng1 {
+        width: 90%;
+        max-width: 217px;
+        max-height: 217px;
+        height: auto;
+        display: block;
+    }
+    
+    .carddisplay {
+        padding: 2%;
+        margin: 10px;
+    }
+    
+    .transition {
+        transition: width 0.75s;
+    }
+    
+    @media only screen and (max-width: 3000px) {
+        .width-0 {
+            width: 70px;
+            height: auto;
+        }
+        .col-lg-11 {
+            width: 95.5%;
+        }
+    }
+    
+    @media only screen and (max-width: 1600px) {
+        .width-0 {
+            width: 70px;
+            height: auto;
+        }
+        .col-lg-11 {
+            width: 91.5%;
+        }
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .width-0 {
+            width: 0;
+            height: 0;
+        }
+        .col-lg-11 {
+            width: 99.5%;
+        }
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .width-0 {
+            width: 0;
+            height: 0;
+        }
+    }

@@ -99,25 +99,40 @@ a:link {
     width: 138px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1324px) {
     .heroborder {
-        width: 30%;
+        width: 100%;
+        height: auto;
         border: 10px solid #FFFFFF;
         max-width: none;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 770px) {
     .heroborder {
-        width: 50%;
+        width: 100%;
+        height: auto;
         max-width: none;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
+    .equal {
+        position: relative;
+    }
+    .first {
+        position: absolute;
+        z-index: 1;
+        opacity: 0.5;
+        height: 100vh;
+        width: 100vw;
+    }
+    .second {
+        z-index: 6;
+    }
     .heroborder {
+        height: auto;
         width: 100%;
-        display: none;
     }
     .form-group {
         max-width: 100%;
